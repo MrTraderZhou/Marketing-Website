@@ -7,122 +7,330 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">AGENCY</div>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#process">Process</a>
+                    <a href="#results">Results</a>
+                    <a href="#contact" class="nav-cta">Get Started</a>
+                </div>
+                <div class="mobile-menu-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">We don't just post content.<br>We grow your business.</h1>
-            <p class="hero-subtitle">Daily content, optimized for the algorithm, engineered for revenue.</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
-                <a href="#process" class="btn btn-secondary">See How It Works</a>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-pulse"></span>
+                    Performance-First Marketing
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">We don't just post content.</span>
+                    <span class="title-line gradient-text">We engineer business growth.</span>
+                </h1>
+                <p class="hero-subtitle">Daily content creation, algorithm optimization, and data-driven strategy that transforms social media into your most powerful revenue engine.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Book a Strategy Call</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#process" class="btn btn-secondary">
+                        <span>See How It Works</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Posts Created</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="250">0</div>
+                        <div class="stat-label">Businesses Scaled</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="95">0</div>
+                        <div class="stat-label">Client Retention %</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- What We Do Section -->
+    <!-- Platform Ticker -->
+    <div class="platform-ticker">
+        <div class="ticker-content">
+            <span>Instagram</span>
+            <span>TikTok</span>
+            <span>Facebook</span>
+            <span>YouTube Shorts</span>
+            <span>Xiaohongshu</span>
+            <span>Douyin</span>
+            <span>Instagram</span>
+            <span>TikTok</span>
+            <span>Facebook</span>
+            <span>YouTube Shorts</span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">What We Do</h2>
-            <p class="section-subtitle">Full-stack social media execution. No fluff, no excuses.</p>
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">End-to-end social media execution designed to drive measurable business outcomes. No fluff, no vanity metrics—just growth.</p>
+            </div>
             
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Social Media Management</h3>
-                    <p>Daily posting across Instagram, TikTok, Facebook, YouTube Shorts, and more. Consistent presence, zero effort on your end.</p>
+                <div class="service-card" data-tilt>
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="32" rx="6" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="3" fill="currentColor"/>
+                            <path d="M12 32L20 24L26 30L36 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Daily Content Creation</h3>
+                    <p>We produce platform-optimized content every single day. Short-form videos, reels, stories, photos—all crafted to stop the scroll and drive engagement. From scripting to final edit, we handle the entire creative pipeline so you never have to think about what to post.</p>
+                    <ul class="service-features">
+                        <li>15-30 pieces of content per month</li>
+                        <li>Professional filming & editing</li>
+                        <li>Trending audio integration</li>
+                        <li>Caption & hook writing</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎬</div>
-                    <h3>Content Creation</h3>
-                    <p>Short-form videos, photos, captions, hooks. We film, edit, and deliver content that stops the scroll.</p>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8L30 20L42 22L33 31L35 43L24 37L13 43L15 31L6 22L18 20L24 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Algorithm Mastery</h3>
+                    <p>We work with platform specialists in both US and Chinese markets to decode exactly what makes content perform. Every video is optimized for watch time, retention, and shareability. We don't guess—we engineer virality based on data and algorithmic principles.</p>
+                    <ul class="service-features">
+                        <li>Real-time trend analysis</li>
+                        <li>A/B testing on hooks & formats</li>
+                        <li>Platform-specific optimization</li>
+                        <li>Viral coefficient tracking</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Algorithm Research</h3>
-                    <p>Consultation with platform specialists. We decode the algorithm so your content gets maximum reach.</p>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-number">03</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="14" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 20H38M18 14V10M30 14V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Multi-Platform Management</h3>
+                    <p>Your content lives everywhere your customers are. We manage Instagram, TikTok, Facebook, YouTube Shorts, and emerging platforms like Xiaohongshu and Douyin. Each platform gets tailored content, optimal posting times, and community management—all coordinated under one strategy.</p>
+                    <ul class="service-features">
+                        <li>6+ platform coverage</li>
+                        <li>Unified content calendar</li>
+                        <li>Cross-platform analytics</li>
+                        <li>Community engagement</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">⏰</div>
-                    <h3>Full Scheduling</h3>
-                    <p>Automated posting at optimal times. Your feed stays active while you run your business.</p>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-number">04</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M12 36L18 24L24 28L30 16L36 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="36" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Business-Focused Analytics</h3>
+                    <p>We track what actually moves the needle: bookings, calls, walk-ins, leads, and revenue. Forget follower counts—we measure real business impact. You get weekly or monthly reports that show exactly how social media is contributing to your bottom line, with clear insights and actionable next steps.</p>
+                    <ul class="service-features">
+                        <li>Revenue attribution tracking</li>
+                        <li>Lead source analysis</li>
+                        <li>ROI measurement</li>
+                        <li>Custom dashboard access</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Performance Analytics</h3>
-                    <p>Track what matters: bookings, calls, foot traffic, leads. Monthly reports that show real business impact.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎯</div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-number">05</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 14V34M14 24H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <h3>Trend Execution</h3>
-                    <p>Trending audio, viral formats, niche-specific strategies. We stay ahead so you capitalize fast.</p>
+                    <p>Trends move fast—we move faster. Our team monitors emerging formats, viral sounds, and platform updates in real-time. When a trend aligns with your brand, we capitalize on it within 24 hours. This rapid execution keeps your content fresh, relevant, and algorithmically favored.</p>
+                    <ul class="service-features">
+                        <li>24-hour trend turnaround</li>
+                        <li>Niche-specific adaptation</li>
+                        <li>Viral sound library</li>
+                        <li>Format innovation</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-tilt>
+                    <div class="service-number">06</div>
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="10" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 18H38M18 10V38" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Complete Hands-Off Experience</h3>
+                    <p>You run your business. We run your social media. No content approvals, no back-and-forth, no time wasted. We own the entire process from concept to posting, delivering consistent results while you focus on what you do best. Your only job is to watch the business grow.</p>
+                    <ul class="service-features">
+                        <li>Zero client workload</li>
+                        <li>Autonomous execution</li>
+                        <li>Brand guideline adherence</li>
+                        <li>Monthly strategy syncs</li>
+                    </ul>
+                    <div class="service-hover-effect"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
+    <!-- Interactive Process Section -->
     <section class="process" id="process">
         <div class="container">
-            <h2 class="section-title">Our Process</h2>
-            <p class="section-subtitle">Simple. Systematic. Results-driven.</p>
+            <div class="section-header">
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">A proven system for turning social media into a revenue-generating machine.</p>
+            </div>
             
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h3>Audit</h3>
-                    <p>We analyze your current presence, competitors, and untapped opportunities. No assumptions—just data.</p>
-                </div>
+            <div class="process-timeline">
+                <div class="timeline-progress" id="timelineProgress"></div>
                 
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h3>Strategy</h3>
-                    <p>Custom content plan built around your niche, audience, and business goals. Platform-specific execution.</p>
+                <div class="process-step" data-step="1">
+                    <div class="step-marker">
+                        <div class="marker-ring"></div>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">Step 01</div>
+                        <h3>Deep Dive Audit</h3>
+                        <p>We start by analyzing your current social presence, competitor strategies, and market positioning. We identify content gaps, untapped opportunities, and algorithmic blind spots. This isn't surface-level—we dig into your niche, audience behavior, and platform-specific performance metrics to build a foundation for explosive growth.</p>
+                        <div class="step-details">
+                            <span>Competitive Analysis</span>
+                            <span>Audience Research</span>
+                            <span>Content Gap Identification</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h3>Daily Execution</h3>
-                    <p>Content creation, editing, posting. We handle everything while you focus on running your business.</p>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-marker">
+                        <div class="marker-ring"></div>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">Step 02</div>
+                        <h3>Custom Strategy Build</h3>
+                        <p>Based on audit findings, we architect a comprehensive content strategy tailored to your business goals. This includes content pillars, posting frequency, platform allocation, and KPI targets. We map out the exact formula for your niche—what to post, when to post it, and how to maximize every piece of content across multiple platforms.</p>
+                        <div class="step-details">
+                            <span>Content Calendar Creation</span>
+                            <span>Platform Strategy</span>
+                            <span>KPI Framework</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <h3>Reporting & Optimization</h3>
-                    <p>Weekly or monthly reports. Real metrics. Continuous refinement based on what actually drives results.</p>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-marker">
+                        <div class="marker-ring"></div>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">Step 03</div>
+                        <h3>Daily Execution</h3>
+                        <p>This is where the magic happens. Our team creates, edits, and publishes content daily across all your platforms. We monitor performance in real-time, respond to trends instantly, and engage with your audience. Every piece of content is optimized for the algorithm before it goes live—no guesswork, just systematic execution.</p>
+                        <div class="step-details">
+                            <span>Content Production</span>
+                            <span>Scheduling & Posting</span>
+                            <span>Real-Time Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-marker">
+                        <div class="marker-ring"></div>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <div class="step-number">Step 04</div>
+                        <h3>Reporting & Continuous Optimization</h3>
+                        <p>Every week or month, you receive detailed reports showing exactly what's working and what's not. We track business outcomes—not vanity metrics. Based on performance data, we continuously refine the strategy, double down on winning content formats, and cut what doesn't deliver. This cycle ensures consistent improvement and compounding growth.</p>
+                        <div class="step-details">
+                            <span>Performance Reports</span>
+                            <span>A/B Test Results</span>
+                            <span>Strategy Refinement</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why It Works Section -->
-    <section class="why-it-works">
+    <!-- Results Section -->
+    <section class="results" id="results">
         <div class="container">
-            <h2 class="section-title">Why It Works</h2>
-            
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>Data-Driven</h3>
-                    <p>Every decision backed by analytics, testing, and platform insights. We don't guess—we measure.</p>
-                </div>
-                
-                <div class="feature">
-                    <h3>Consistency at Scale</h3>
-                    <p>Daily posting isn't optional. The algorithm rewards consistency, and we deliver it without fail.</p>
-                </div>
-                
-                <div class="feature">
+            <div class="section-header">
+                <h2 class="section-title">Why It Works</h2>
+                <p class="section-subtitle">Data-driven execution, algorithmic precision, and relentless consistency.</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">🎯</div>
                     <h3>Platform-Specific Strategy</h3>
-                    <p>Instagram isn't TikTok. YouTube Shorts isn't Facebook. We optimize for each platform's unique algorithm.</p>
+                    <p>Instagram isn't TikTok. YouTube Shorts isn't Facebook. We optimize every piece of content for the unique algorithm, audience behavior, and best practices of each platform. What works on one platform gets adapted—not copied—for others.</p>
                 </div>
-                
-                <div class="feature">
-                    <h3>Business Outcomes</h3>
-                    <p>We track bookings, calls, and revenue impact—not vanity metrics. Your growth is our success.</p>
+
+                <div class="result-card">
+                    <div class="result-icon">📊</div>
+                    <h3>Data-Driven Decisions</h3>
+                    <p>Every creative decision is backed by performance data. We test, measure, and iterate constantly. No assumptions, no creative ego—just cold, hard metrics that tell us what drives results for your business.</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">⚡</div>
+                    <h3>Consistency at Scale</h3>
+                    <p>The algorithm rewards consistency more than anything else. We deliver daily content without fail, maintaining quality and strategic alignment. This relentless cadence compounds over time, building momentum that's impossible to replicate with sporadic posting.</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">💰</div>
+                    <h3>Business-First Mindset</h3>
+                    <p>We don't chase likes. We chase revenue. Every piece of content is designed to drive bookings, calls, walk-ins, or purchases. Our success is measured by your bottom line—not your follower count.</p>
                 </div>
             </div>
         </div>
@@ -131,82 +339,123 @@
     <!-- Pricing Section -->
     <section class="pricing">
         <div class="container">
-            <h2 class="section-title">Investment</h2>
-            <p class="section-subtitle">Monthly management packages starting at $2,500</p>
-            <p class="pricing-note">Custom pricing based on content volume, platforms, and business needs.</p>
-            <a href="#contact" class="btn btn-primary">Get a Custom Quote</a>
+            <div class="section-header">
+                <h2 class="section-title">Investment</h2>
+                <p class="section-subtitle">Custom packages built around your business needs and growth goals.</p>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-highlight">Most Popular</div>
+                <h3>Monthly Management Packages</h3>
+                <div class="pricing-amount">Starting at <span class="price">$2,500</span>/month</div>
+                <p class="pricing-description">All-inclusive social media management with daily content creation, algorithm optimization, and performance reporting. Pricing scales based on content volume, platform coverage, and business complexity.</p>
+                <ul class="pricing-features">
+                    <li>Complete content production</li>
+                    <li>Multi-platform management</li>
+                    <li>Algorithm consultation</li>
+                    <li>Business-focused analytics</li>
+                    <li>Trend execution</li>
+                    <li>Monthly strategy calls</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Get a Custom Quote</a>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Let's Talk</h2>
-            <p class="section-subtitle">Ready to let the algorithm work for you?</p>
+            <div class="section-header">
+                <h2 class="section-title">Let's Talk</h2>
+                <p class="section-subtitle">Ready to turn social media into your most powerful growth channel?</p>
+            </div>
             
-            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
+            <div class="contact-wrapper">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="business">Business Name</label>
+                            <input type="text" id="business" name="business" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <select id="industry" name="industry" required>
+                                <option value="">Select your industry</option>
+                                <option value="restaurant">Restaurant / Food Service</option>
+                                <option value="salon">Salon / Beauty</option>
+                                <option value="realestate">Real Estate</option>
+                                <option value="fitness">Fitness / Wellness</option>
+                                <option value="retail">Retail</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell us about your business and goals</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
                 
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h4>Email Us</h4>
+                        <a href="mailto:hello@youragency.com">hello@youragency.com</a>
+                    </div>
+                    <div class="info-card">
+                        <h4>Response Time</h4>
+                        <p>Within 24 hours</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Book a Call</h4>
+                        <p>Schedule a free 30-minute strategy session</p>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <input type="text" name="business" placeholder="Business Name">
-                </div>
-                
-                <div class="form-group">
-                    <textarea name="message" placeholder="Tell us about your business and goals" rows="5" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-            
-            <p class="contact-email">Or email us directly: <a href="mailto:hello@youragency.com">hello@youragency.com</a></p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Agency Name. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">AGENCY</div>
+                    <p>Performance-first social media management that drives real business growth.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#process">Process</a>
+                    <a href="#results">Results</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Agency Name. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Simple fade-in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.service-card, .step, .feature').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
